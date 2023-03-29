@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image" />
+
+    <title>Calcule seu IMC</title>
+  </head>
+  <body>
+    <main>
+      <h1>Calcule seu IMC</h1>
+      <p>
+        <strong>O que é o IMC?</strong>
+        IMC é a sigla para Índece de Massa Corpórea. O IMC é reconhecido como
+        padrão internacional para avaliar o grau de sobrepeso e obesidade. É
+        calculado dividindo o peso (em kg) pela altura ao quadrado (em metros)
+      </p>
+      <div class="your-height">
+        <label for="altura">Altura (M)</label>
+        <input
+          type="number"
+          placeholder="Preencha sua altura em metros"
+          id="altura"
+        />
+      </div>
+      <div class="your-weight">
+        <label for="peso">Peso (KG)</label>
+        <input
+          type="number"
+          placeholder="Preencha seu peso em quilogramas"
+          id="peso"
+        />
+      </div>
+      <div class="divCalc">
+        <button onclick="calcIMC()">Calcular</button>
+      </div>
+      <span id="resultado"></span>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
